@@ -1,0 +1,171 @@
+body{
+   
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.whole-app{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    
+    background-color: black
+}
+.app-header{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   padding: 5px 20px;
+   background-color: black;
+   padding-top: 5px;
+}
+
+.header-left{
+    /* background-color: aqua; */
+    flex:1;
+    height: 100px;
+    padding-bottom: 10px;
+    color:white;
+    padding: 0 100px;
+   
+}
+/* Everything inside the left side of the header */
+    .app-logo-holder{
+        display: block;
+        height: 35px;
+    }
+    .app-logo-holder > img{
+        height: 35px;
+    }
+    .app-name{
+        margin: 0;
+       text-align: center;
+        font-size: 40px;
+    }
+    #current-time{
+        text-align: end;
+        margin: 0;
+    }
+.header-right{
+    display: flex;
+    /* background-color: lightblue; */
+    justify-content: flex-end;
+   align-items: center;
+    flex:1;
+    align-items:center;
+   
+   
+}
+/* Everything inside the right side of the header */
+.header-right-buttons{
+    width:120px;
+    padding: 10px 2px;
+    margin-right: 3px;
+    font-size: 18px;
+    background-color: transparent;
+    color: rgb(236, 228, 228);
+    border:none;
+    cursor: pointer;
+    transition: 0.3a;
+}
+.header-right-buttons:hover{
+    border-bottom: 2px solid white;
+    color:white;
+}
+/* End of Header */
+
+/* start of main */
+    /* the search */
+.main-search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    margin-bottom: 30px;
+}
+.main-search-key{
+    position: absolute;
+    height: 25px;
+    left: 253px;
+    border-radius: 10px;
+    background-color: transparent;
+    border :none;
+    cursor: pointer;
+}
+
+
+.main-search-key>img{
+    height: 100%;
+}
+.main-search-input{
+    box-sizing: border-box;
+    width: 500px;
+    padding-left: 40px;
+    border-radius:15px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+
+   }
+/* GENERAL SECTION STYLES */
+.general-sections{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.general-section-middle{
+    height: 350px;
+    width: 800px;
+    border-radius: 25px;
+   padding: 10px;
+    background-image: linear-gradient(to bottom right,rgb(228, 37, 228),rgb(110, 13, 110),rgb(48, 36, 36));
+}
+.sub-heading{
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(18, 230, 177), rgb(13, 134, 138));
+    padding-left: 30px;
+}
+
+/* EVERYTHING IN FIRST SECTION */
+.section1-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+}
+#main-location,#date-of-today{
+    flex:1;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+}
+#temperature-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:2;
+    }
+#temperature-details > spam{
+    font-size: 70px;
+    margin-right: 6px;
+
+}
+#temperature-details > img{
+    width: 60px;
+}
+#date-of-today{
+    flex :1;
+    text-align: left;
+}
+.other-weather-details{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}

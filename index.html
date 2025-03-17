@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="whole-app">
+    <header class="app-header">
+        <div class="header-left">
+        <div class="app-logo-holder"><img src="images/app logo.png" alt=""></div>
+            <h1 class="app-name">Weather Forcast</h1>
+            <p id="current-time">12:00AM</p>
+        </div>
+        <div class="header-right">
+            <button class="header-right-buttons">Today</button>
+            <button class="header-right-buttons">Tomorrow</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-search-container">
+            <button class="main-search-key"><img src="images/search logo.png"></button>
+            <input class="main-search-input" type="text" placeholder="Search location...">
+        </div>
+        <!--First Section dealing with all weather details -->
+        <h1 class="sub-heading">Basic Weather Details</h1>
+        <section class="first-section general-sections">
+          
+            <div class="section1-middle general-section-middle">
+                <div id="main-location">Bamenda</div>
+                <div id="temperature-details"><spam>27&deg;C</spam><img src="images/app logo.png"></div>
+                <div id="date-of-today">Dec 9 2023</div>
+                <div class="other-weather-details">
+                    <div id="humidity-details">HUMIDITY<br>99%</div>
+                    <div id="visisbility-details">VISIBILITY<br>8km</div>
+                    <div id="air-pressure-details">AIR PRESSURE<br>1005hPa</div>
+                    <div id="wind-details">WIND<br>2mph</div>
+                </div>
+            </div>
+            
+        </section>
+        <h1 class="sub-heading">Charts and Tables</h1>
+        <section class="second-section general-sections">
+           
+            <div class="section2-middle general-section-middle">
+               
+            </div>
+           
+        </section>
+        <h1 class="sub-heading">Compare 2 locations</h1>
+        <section class="third-section general-sections">
+       
+            <div class="section3-middle general-section-middle"></div>
+       
+        </section>
+    </main>
+
+</div>
+<script src="script/script.js"></script>
+</body>
+</html>
